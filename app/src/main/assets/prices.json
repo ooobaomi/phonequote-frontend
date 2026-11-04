@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "sourceName": "功能验证示例数据（非正式报价）",
+  "updatedAt": "2026-07-30",
+  "items": [
+    {
+      "brand": "Apple",
+      "model": "iPhone 15 Pro",
+      "aliases": ["苹果15 Pro", "苹果 15Pro", "iPhone15Pro", "15 Pro"],
+      "storage": "256GB",
+      "grades": [
+        {"name": "靓机", "price": 4300},
+        {"name": "小花", "price": 4050},
+        {"name": "大花", "price": 3700}
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "iPhone 15 Pro Max",
+      "aliases": ["苹果15 Pro Max", "苹果 15PM", "iPhone15ProMax", "15 ProMax"],
+      "storage": "256GB",
+      "grades": [
+        {"name": "靓机", "price": 5100},
+        {"name": "小花", "price": 4800},
+        {"name": "大花", "price": 4450}
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "iPhone 15 Pro Max",
+      "aliases": ["苹果15 Pro Max", "苹果 15PM", "iPhone15ProMax", "15 ProMax"],
+      "storage": "512GB",
+      "grades": [
+        {"name": "靓机", "price": 5900},
+        {"name": "小花", "price": 5550},
+        {"name": "大花", "price": 5150}
+      ]
+    },
+    {
+      "brand": "华为",
+      "model": "Mate 60 Pro",
+      "aliases": ["华为Mate60Pro", "Mate60 Pro", "Mate 60Pro"],
+      "storage": "512GB",
+      "grades": [
+        {"name": "靓机", "price": 3900},
+        {"name": "小花", "price": 3600},
+        {"name": "大花", "price": 3250}
+      ]
+    },
+    {
+      "brand": "小米",
+      "model": "小米 14",
+      "aliases": ["小米14", "Xiaomi 14", "MI 14"],
+      "storage": "256GB",
+      "grades": [
+        {"name": "靓机", "price": 2500},
+        {"name": "小花", "price": 2250},
+        {"name": "大花", "price": 1950}
+      ]
+    },
+    {
+      "brand": "OPPO",
+      "model": "Find X7 Ultra",
+      "aliases": ["OPPO FindX7Ultra", "Find X7Ultra", "FindX7 Ultra"],
+      "storage": "1TB",
+      "grades": [
+        {"name": "靓机", "price": 3700},
+        {"name": "小花", "price": 3400},
+        {"name": "大花", "price": 3050}
+      ]
+    }
+  ]
+}

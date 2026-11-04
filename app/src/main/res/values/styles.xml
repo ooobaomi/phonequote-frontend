@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.PhoneQuote" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryVariant">@color/green_dark</item>
+        <item name="colorSecondary">@color/blue</item>
+        <item name="android:colorAccent">@color/green</item>
+        <item name="android:navigationBarColor">@color/surface</item>
+        <item name="android:statusBarColor">@color/surface</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:buttonStyle">@style/Widget.PhoneQuote.Button</item>
+        <item name="buttonStyle">@style/Widget.PhoneQuote.Button</item>
+        <item name="materialButtonStyle">@style/Widget.PhoneQuote.Button</item>
+    </style>
+
+    <style name="Widget.PhoneQuote.Button" parent="Widget.MaterialComponents.Button">
+        <!-- Keep the custom primary/secondary shape and its intended surface color. -->
+        <item name="android:backgroundTint">@null</item>
+        <item name="backgroundTint">@null</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Widget.PhoneQuote.BottomNavigation.ActiveIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/green_soft</item>
+    </style>
+</resources>

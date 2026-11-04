@@ -1,0 +1,28 @@
+# Local secrets / data
+.env
+.env.*
+!.env.example
+!.env.development.example
+local.properties
+*.db
+*.db-*
+*.pem
+*.key
+*.jks
+*.keystore
+# Build/cache
+.gradle/
+**/build/
+**/node_modules/
+**/dist/
+**/__pycache__/
+**/.pytest_cache/
+**/*.tsbuildinfo
+*.apk
+*.aab
+storage/
+server/storage/
+deploy/tls/
+.venv/
+*.iml
+.idea/

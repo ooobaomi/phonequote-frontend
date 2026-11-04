@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/paper"
+    android:fillViewport="true">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingLeft="20dp" android:paddingTop="24dp" android:paddingRight="20dp" android:paddingBottom="28dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="账号" android:textColor="@color/ink" android:textSize="26sp" android:textStyle="bold" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="管理个人资料、使用期限和团队成员。" android:textColor="@color/muted" android:textSize="14sp" />
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:background="@drawable/bg_panel" android:orientation="vertical">
+            <TextView android:id="@+id/accountName" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="正在读取账号..." android:textColor="@color/ink" android:textSize="18sp" android:textStyle="bold" />
+            <TextView android:id="@+id/accountMeta" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:textColor="@color/muted" android:textSize="13sp" />
+            <TextView android:id="@+id/accountExpiry" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:background="@drawable/bg_success_banner" android:text="剩余时间读取中" android:textColor="@color/green_dark" android:textSize="14sp" android:textStyle="bold" />
+            <EditText android:id="@+id/profileNameInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:hint="姓名" android:inputType="textPersonName" android:maxLength="80" android:singleLine="true" />
+            <Button android:id="@+id/saveProfileButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:background="@drawable/bg_button_secondary" android:text="保存姓名" android:textAllCaps="false" android:textColor="@color/blue" />
+            <Button android:id="@+id/changePasswordButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:background="@drawable/bg_button_secondary" android:text="修改登录密码" android:textAllCaps="false" android:textColor="@color/blue" />
+            <Button android:id="@+id/logoutButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:background="@drawable/bg_button_secondary" android:text="退出当前账号" android:textAllCaps="false" android:textColor="@color/danger" />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/teamSection" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:background="@drawable/bg_panel" android:orientation="vertical" android:visibility="gone">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="团队管理" android:textColor="@color/ink" android:textSize="18sp" android:textStyle="bold" />
+            <TextView android:id="@+id/teamSummary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:textColor="@color/muted" android:textSize="13sp" />
+            <EditText android:id="@+id/teamNameInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:hint="团队名称" android:maxLength="100" android:singleLine="true" />
+            <Switch android:id="@+id/allowMemberUploadsSwitch" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="允许子账号上传报价表" android:textColor="@color/ink" />
+            <Button android:id="@+id/saveTeamButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:background="@drawable/bg_button_primary" android:text="保存团队设置" android:textAllCaps="false" android:textColor="@android:color/white" android:textStyle="bold" />
+
+            <LinearLayout android:id="@+id/addMemberPanel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="添加已注册成员" android:textColor="@color/ink" android:textSize="16sp" android:textStyle="bold" />
+                <EditText android:id="@+id/memberPhoneInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:hint="已注册手机号" android:inputType="phone" android:maxLength="11" android:singleLine="true" />
+                <Button android:id="@+id/addMemberButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:background="@drawable/bg_button_secondary" android:text="添加到团队" android:textAllCaps="false" android:textColor="@color/blue" />
+            </LinearLayout>
+
+            <TextView android:id="@+id/memberListTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="团队成员" android:textColor="@color/ink" android:textSize="16sp" android:textStyle="bold" />
+            <LinearLayout android:id="@+id/memberList" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:orientation="vertical" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

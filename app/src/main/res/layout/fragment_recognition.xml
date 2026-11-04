@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/paper"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="24dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="28dp">
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="悬浮识别" android:textColor="@color/ink" android:textSize="26sp" android:textStyle="bold" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="滑到含有型号和内存的页面，再点击悬浮按钮开始 OCR。" android:textColor="@color/muted" android:textSize="14sp" />
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:background="@drawable/bg_panel" android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="识别状态" android:textColor="@color/ink" android:textSize="17sp" android:textStyle="bold" />
+            <TextView android:id="@+id/statusText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:text="悬浮识别未启动" android:textColor="@color/muted" android:textSize="14sp" />
+            <Button android:id="@+id/startButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:background="@drawable/bg_button_primary" android:text="启动悬浮识别" android:textAllCaps="false" android:textColor="@android:color/white" android:textStyle="bold" />
+            <Button android:id="@+id/stopButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:background="@drawable/bg_button_secondary" android:text="停止悬浮识别" android:textAllCaps="false" android:textColor="@color/danger" />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:background="@drawable/bg_panel" android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="当前报价" android:textColor="@color/ink" android:textSize="17sp" android:textStyle="bold" />
+            <TextView android:id="@+id/activeTableName" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:text="正在读取报价表..." android:textColor="@color/ink" android:textSize="15sp" android:textStyle="bold" />
+            <TextView android:id="@+id/activeTableMeta" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:textColor="@color/muted" android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:background="@drawable/bg_panel" android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="本地数据状态" android:textColor="@color/ink" android:textSize="17sp" android:textStyle="bold" />
+            <TextView android:id="@+id/dataBanner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:textColor="@color/green_dark" android:textSize="14sp" android:textStyle="bold" />
+            <TextView android:id="@+id/dataDetail" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:textColor="@color/muted" android:textSize="13sp" />
+            <Button android:id="@+id/importButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:background="@drawable/bg_button_secondary" android:text="手动导入本地 JSON" android:textAllCaps="false" android:textColor="@color/blue" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ink">#17201D</color>
+    <color name="muted">#62706B</color>
+    <color name="paper">#F5F7F6</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="line">#DDE4E1</color>
+    <color name="green">#147D64</color>
+    <color name="green_dark">#0F634F</color>
+    <color name="blue">#246BCE</color>
+    <color name="amber_bg">#FFF4D6</color>
+    <color name="amber_text">#755100</color>
+    <color name="danger">#B3261E</color>
+    <color name="green_soft">#E8F5F0</color>
+    <color name="blue_soft">#EAF2FF</color>
+    <color name="blue_text">#174D99</color>
+</resources>

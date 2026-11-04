@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">回收报价助手</string>
+    <string name="app_subtitle">手动触发全屏识别，本地匹配报价</string>
+    <string name="run_status">运行状态</string>
+    <string name="not_running">悬浮识别未启动</string>
+    <string name="start_overlay">启动悬浮识别</string>
+    <string name="stop_overlay">停止悬浮识别</string>
+    <string name="local_library">本地报价库</string>
+    <string name="import_json">导入品牌报价 JSON</string>
+    <string name="usage_hint">启动后切换到报价页面，滑到型号和容量可见的位置，再点击悬浮按钮。</string>
+    <string name="assistant_name">报价助手</string>
+    <string name="drag">拖动</string>
+    <string name="collapse">收起</string>
+    <string name="scan_current">识别当前页</string>
+</resources>

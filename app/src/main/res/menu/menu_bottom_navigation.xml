@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_recognition" android:icon="@drawable/ic_scan" android:title="识别" />
+    <item android:id="@+id/nav_upload" android:icon="@drawable/ic_upload" android:title="上传" />
+    <item android:id="@+id/nav_quotes" android:icon="@drawable/ic_quote_table" android:title="报价表" />
+    <item android:id="@+id/nav_account" android:icon="@drawable/ic_account" android:title="账号" />
+</menu>
